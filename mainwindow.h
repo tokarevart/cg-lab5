@@ -20,8 +20,6 @@ class MainWindow : public QMainWindow {
     ~MainWindow();
 
   private slots:
-    void on_render_button_clicked();
-
     void on_renderer_tabs_currentChanged(int index);
 
     void on_proj_tabs_currentChanged(int index);

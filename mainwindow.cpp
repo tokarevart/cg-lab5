@@ -121,12 +121,6 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::on_render_button_clicked() {
-    gview3d->renderer = parse_renderer(ui);
-    gview3d->renderer->proj = parse_projection(ui);
-    gview3d->render();
-}
-
 void MainWindow::on_renderer_tabs_currentChanged(int index) {
     gview3d->renderer = parse_renderer(ui);
     gview3d->renderer->proj = parse_projection(ui);

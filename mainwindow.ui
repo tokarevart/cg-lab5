@@ -569,13 +569,6 @@
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="render_button">
-      <property name="text">
-       <string>Render</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <layout class="QVBoxLayout" name="gview3d_layout"/>
     </item>
    </layout>
