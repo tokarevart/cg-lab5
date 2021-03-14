@@ -122,12 +122,14 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::on_renderer_tabs_currentChanged(int index) {
+    Q_UNUSED(index)
     gview3d->renderer = parse_renderer(ui);
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
 
 void MainWindow::on_proj_tabs_currentChanged(int index) {
+    Q_UNUSED(index)
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
@@ -141,68 +143,81 @@ void MainWindow::on_meshimport_button_clicked() {
 }
 
 void MainWindow::on_pixelsize_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
 
 void MainWindow::on_fov_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
 
 void MainWindow::on_near_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->renderer = parse_renderer(ui);
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
 
 void MainWindow::on_far_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->renderer = parse_renderer(ui);
     gview3d->renderer->proj = parse_projection(ui);
     gview3d->render();
 }
 
 void MainWindow::on_light_x_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_y_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_z_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_ia_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_ka_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_il_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_kd_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_ks_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }
 
 void MainWindow::on_light_n_sbox_valueChanged(double arg1) {
+    Q_UNUSED(arg1)
     gview3d->set_light(parse_light(ui));
     gview3d->render();
 }

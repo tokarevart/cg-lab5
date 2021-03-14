@@ -75,22 +75,6 @@ class GraphicsView3D : public QGraphicsView
                 renderer->proj->viewport().image))->setPos(0, 0);
     }
 
-//    void render_ghost(Camera actual_cam) {
-//        QImage image(size(), QImage::Format_RGB32);
-//        image.fill(Qt::white);
-//        Viewport viewport(image);
-//        // scene.backface_cull();
-//        renderer->proj->set_viewport(std::move(viewport));
-//        GhostScene ghost(m_scene, actual_cam, m_cam);
-//        renderer->render(ghost);
-
-//        m_gscene->clear();
-//        m_gscene->setSceneRect(rect());
-//        m_gscene->addPixmap(
-//            QPixmap::fromImage(
-//                renderer->proj->viewport().image))->setPos(0, 0);
-//    }
-
     void mousePressEvent(QMouseEvent* event) override {
         qprevpos = event->pos();
     }
